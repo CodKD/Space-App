@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:space_app/UI/details/planet_details.dart';
-import 'package:space_app/UI/home/home.dart';
-import 'package:space_app/UI/login/login.dart';
-import 'package:space_app/core/constants/routes.dart';
+import 'package:space_app/Ui/details_screen/details_screen.dart';
+import 'package:space_app/Ui/home_screen/home_screen.dart';
+import 'package:space_app/Ui/landing_screen/landing.dart';
 import 'package:space_app/core/theme/app_theme.dart';
 
+import 'core/constants/routes.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,12 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.appTheme,
       debugShowCheckedModeBanner: false,
+      initialRoute: Routes.landingRoute,
       routes: {
-        Routes.loginRoute: (_) => const Login(),
-        Routes.homeRoute: (_) => const Home(),
-        Routes.detailsRoute: (_) =>  PlanetDetails()
+        Routes.homeRoute: (context) => const HomeScreen(),
+        Routes.detailsRoute: (context) => DetailsScreen(),
+        Routes.landingRoute: (context) => const LandingScreen(),
       },
-      initialRoute: Routes.loginRoute,
     );
   }
 }

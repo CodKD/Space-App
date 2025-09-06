@@ -1,0 +1,2 @@
+C:/Users/alyro/Route/C15/_6_Space-App/android/app/.cxx/Debug/1v4k5j5e/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/alyro/Route/C15/_6_Space-App/android/app/.cxx/Debug/1v4k5j5e/x86_64/CMakeFiles/rebuild_cache.dir
